@@ -1,0 +1,24 @@
+#ifndef HOLB_H
+#define HOLB_H
+
+#include <stdarg.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+/**
+ * struct convert - defines a layed out structure for symbols and functions
+ * @sym: operator symbol
+ * @f: associated function
+ */
+struct convert
+{
+	char *sym;
+	int (*f)(va_list);
+}
+typedef struct convert crt;
+
+/* prototype functions */
+int _printf(const char *format, ...);
+
+int _putchar(char);
+

@@ -1,0 +1,14 @@
+#include "holberton.h"
+
+/**
+ * _printf -
+ * @format: character string
+ *
+ * Return: an integer value
+ */
+
+int _printf(const char *format, ...)
+{
+	va_list arg;
+
+}
