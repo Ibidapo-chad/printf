@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct convert - defines a layed out structure for symbols and functions
@@ -21,7 +22,7 @@ typedef struct convert crt;
 int _printf(const char *format, ...);
 
 int _putchar(char);
-
+int  printf_new(char *pszFormatString, ...);
 int parser(const char *format, conver_t f_list[], va_list arg_list);
 int print_char(va_list);
 int print_string(va_list);
