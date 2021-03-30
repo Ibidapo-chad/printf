@@ -11,18 +11,16 @@
  * @sym: operator symbol
  * @f: associated function
  */
-struct convert
+typedef struct convert
 {
 	char *sym;
 	int (*f)(va_list);
-}
-typedef struct convert crt;
+}crt;
 
 /* prototype functions */
 int _printf(const char *format, ...);
 
 int _putchar(char);
-int  printf_new(char *pszFormatString, ...);
 int parser(const char *format, conver_t f_list[], va_list arg_list);
 int print_char(va_list);
 int print_string(va_list);
